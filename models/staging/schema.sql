@@ -1,0 +1,9 @@
+version: 1
+
+sources:
+    - name: staging
+      database: ny-rides-de
+      schema: trips_data_all
+
+      tables:
+          - name: external_green_tripdata
