@@ -7,5 +7,3 @@ sources:
 
       tables:
           - name: external_green_tripdata
-          - name: external_yellow_tripdata
-          
