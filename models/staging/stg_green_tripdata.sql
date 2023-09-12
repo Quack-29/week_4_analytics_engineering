@@ -2,4 +2,4 @@
 
 SELECT *
 FROM {{ source('staging','external_green_tripdata') }}
-LIMIT 100;
+LIMIT 100
