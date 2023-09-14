@@ -1,7 +1,7 @@
 {{ config(materialized='table') }}
 
 SELECT 
-    cast(vendorid as integer) as vendorid,
+    {{  dbt_utils.surrogate_key(['vendorid', 'lpep_pickup_datetime'])   }} as tripid, vendorid,
     cast(ratecodeid as integer) as ratecodeid,
     cast(pulocationid as integer) as  pickup_locationid,
     cast(dolocationid as integer) as dropoff_locationid,
