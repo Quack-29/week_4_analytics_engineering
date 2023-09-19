@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+{{ config(materialized='view') }}
 
 SELECT 
     {{  dbt_utils.surrogate_key(['vendorid', 'lpep_pickup_datetime'])   }} as tripid, vendorid,
